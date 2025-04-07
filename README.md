@@ -3,7 +3,7 @@
 1. Collect data from publlicly available sources (all in format data_<source>.py)
 2. Analyze them to identify underserved markets
 3. The SEC Data has a free API but with only 100 requests that I met.  So the alternative was to stop using the SEC and FINRA data to find number of advisors, as originally planned but to rely instead on BLS data
-4. All the data files are in subfolders that end with ..._data that also has data dictionaries 
+4. All the data files are in subfolders that end with '..._data' that also has data dictionaries 
 
 ## Data Sources
 
