@@ -1,0 +1,13 @@
+# Ignore data files in any folder ending with _data
+**/*_data/**/*.csv
+**/*_data/**/*.json
+**/*_data/**/*.zip
+**/*_data/**/*.xlsx
+**/*_data/**/*.xls
+**/*_data/**/*.parquet
+**/*_data/**/*.txt
+irs_soi_data/*
+
+# Optional: Keep documentation or placeholders
+!**/*_data/**/README.md
+!**/*_data/**/.gitkeep
