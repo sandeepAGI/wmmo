@@ -11,3 +11,7 @@ irs_soi_data/*
 # Optional: Keep documentation or placeholders
 !**/*_data/**/README.md
 !**/*_data/**/.gitkeep
+
+# API Keys file - don't commit secrets
+secrets.py
+.env

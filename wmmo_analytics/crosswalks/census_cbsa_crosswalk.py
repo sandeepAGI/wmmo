@@ -363,7 +363,16 @@ def get_cbsa_relationships_from_api():
         # First, let's try to get county-to-CBSA relationships from 2023 data
         
         # Construct the API URL
-        api_url = "https://api.census.gov/data/2023/pep/population?get=NAME,CBSA&for=county:*&key='5721c8c54e15cb904a4b6cda8ad6c18b9afdcc34'"
+        try:
+            # Try to import from the main secrets file
+            sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '..'))
+            from secrets import CENSUS_API_KEY
+            api_key = CENSUS_API_KEY
+        except ImportError:
+            logging.error("Could not import CENSUS_API_KEY from secrets.py. Using placeholder value.")
+            api_key = "YOUR_API_KEY"
+            
+        api_url = f"https://api.census.gov/data/2023/pep/population?get=NAME,CBSA&for=county:*&key={api_key}"
         
         # Note: In a real implementation, you would need to register for a Census API key
         # For this example, we'll simulate the API response format

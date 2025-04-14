@@ -676,8 +676,13 @@ class BEADataCollector:
 
 def main():
     """Main function to execute the BEA data collection"""
-    # Replace with your actual BEA API key
-    api_key = "32473ABD-8FC6-4C35-BCBB-32FCDF23479E"
+    # Import API key from secrets file
+    try:
+        from secrets import BEA_API_KEY
+        api_key = BEA_API_KEY
+    except ImportError:
+        print("ERROR: secrets.py file not found. Please create it from secrets_template.py")
+        return
     
     # Initialize the collector
     collector = BEADataCollector(api_key)

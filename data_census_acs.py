@@ -341,8 +341,13 @@ def create_data_dictionary(variables):
     return pd.DataFrame(records)
 
 if __name__ == "__main__":
-    # Replace with your actual Census API key
-    API_KEY = "5721c8c54e15cb904a4b6cda8ad6c18b9afdcc34"
+    # Import API key from secrets file
+    try:
+        from secrets import CENSUS_API_KEY
+        API_KEY = CENSUS_API_KEY
+    except ImportError:
+        print("ERROR: secrets.py file not found. Please create it from secrets_template.py")
+        exit(1)
     
     # Collect ACS data
     acs_data = collect_acs_data(API_KEY)

@@ -8,6 +8,21 @@ This project analyzes public data sources to identify underserved markets for we
 2. **Data Analysis**: Scripts to aggregate county-level data to MSA level and calculate metrics
 3. **Metrics & Rankings**: Calculation of wealth management opportunity metrics and market rankings
 
+## API Keys Setup
+
+This project requires API keys from various data providers. To set up the required keys:
+
+1. Copy `secrets_template.py` to `secrets.py`:
+   ```bash
+   cp secrets_template.py secrets.py
+   ```
+
+2. Edit `secrets.py` and add your actual API keys:
+   - BEA_API_KEY: Get from [BEA API](https://apps.bea.gov/API/signup/)
+   - CENSUS_API_KEY: Get from [Census API](https://api.census.gov/data/key_signup.html)
+
+The `secrets.py` file is in `.gitignore` to ensure API keys are never committed to the repository.
+
 ## Data Sources
 
 1. `data_census_acs.py` - Census American Community Survey (ACS) data at county level
