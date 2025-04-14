@@ -1,2 +1,86 @@
 2025-04-07 13:15:17,879 - INFO - Downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls...
 2025-04-07 13:15:17,963 - ERROR - Error downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls: 403 Client Error: Forbidden for url: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls
+2025-04-14 09:23:04,469 - INFO - Downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls...
+2025-04-14 09:23:04,624 - ERROR - Error downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls: 403 Client Error: Forbidden for url: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls
+2025-04-14 09:31:29,145 - INFO - Downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx...
+2025-04-14 09:31:29,145 - INFO - Verifying URL: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx
+2025-04-14 09:31:29,290 - ERROR - URL not accessible: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx, status code: 403
+2025-04-14 09:31:29,291 - ERROR - Cannot download from inaccessible URL: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx
+2025-04-14 09:31:29,291 - INFO - Attempting fallback URL: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls
+2025-04-14 09:31:29,291 - INFO - Verifying URL: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls
+2025-04-14 09:31:29,386 - ERROR - URL not accessible: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls, status code: 403
+2025-04-14 09:31:29,387 - ERROR - Failed to download delineation file. Exiting.
+2025-04-14 09:36:26,591 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-14 09:36:30,547 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_tiger_20250414.zip
+2025-04-14 09:36:30,548 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip...
+2025-04-14 09:36:40,652 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/county_tiger_20250414.zip
+2025-04-14 09:36:40,666 - INFO - Processing CBSA data from TIGER/Line shapefile
+2025-04-14 09:36:40,668 - INFO - Found DBF file: tl_2023_us_cbsa.dbf
+2025-04-14 09:36:40,668 - ERROR - Error extracting ZIP content: No module named 'dbfread'
+2025-04-14 09:36:40,668 - ERROR - Failed to process CBSA data. Exiting.
+2025-04-14 09:40:54,958 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-14 09:40:59,555 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_tiger_20250414.zip
+2025-04-14 09:40:59,557 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip...
+2025-04-14 09:41:11,159 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/county_tiger_20250414.zip
+2025-04-14 09:41:11,175 - INFO - Processing CBSA data from TIGER/Line shapefile
+2025-04-14 09:41:11,176 - INFO - Found DBF file: tl_2023_us_cbsa.dbf
+2025-04-14 09:41:11,177 - WARNING - GeoPandas not installed. Falling back to DBF file parsing.
+2025-04-14 09:41:11,177 - WARNING - simpledbf not installed. Attempting direct read with pandas.
+2025-04-14 09:41:11,178 - ERROR - Failed to read DBF with pandas: module 'pandas' has no attribute 'read_dbf'
+2025-04-14 09:41:11,178 - ERROR - Could not read DBF file. Please install one of these packages:
+2025-04-14 09:41:11,178 - ERROR -   pip install geopandas
+2025-04-14 09:41:11,178 - ERROR -   pip install simpledbf
+2025-04-14 09:41:11,178 - ERROR -   pip install dbfread
+2025-04-14 09:41:11,178 - ERROR - Failed to process CBSA data. Exiting.
+2025-04-14 09:42:27,514 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-14 09:42:31,848 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_tiger_20250414.zip
+2025-04-14 09:42:31,849 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip...
+2025-04-14 09:42:41,708 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/county_tiger_20250414.zip
+2025-04-14 09:42:41,719 - INFO - Processing CBSA data from TIGER/Line shapefile
+2025-04-14 09:42:41,721 - INFO - Found DBF file: tl_2023_us_cbsa.dbf
+2025-04-14 09:42:45,235 - INFO - Loaded 935 rows from tl_2023_us_cbsa.shp using GeoPandas
+2025-04-14 09:42:45,242 - INFO - Processed CBSA data with 393 Metropolitan Statistical Areas
+2025-04-14 09:42:45,254 - INFO - Processing county data from TIGER/Line shapefile
+2025-04-14 09:42:45,254 - INFO - Found DBF file: tl_2023_us_county.dbf
+2025-04-14 09:42:45,850 - INFO - Loaded 3235 rows from tl_2023_us_county.shp using GeoPandas
+2025-04-14 09:42:45,863 - INFO - Processed county data with 3235 counties
+2025-04-14 09:42:45,863 - INFO - Getting CBSA-to-county relationships from Census API
+2025-04-14 09:42:45,863 - WARNING - Census API key required - replace 'YOUR_API_KEY' with your actual API key
+2025-04-14 09:42:45,863 - INFO - Attempting to create relationships from downloaded TIGER/Line files
+2025-04-14 09:42:45,863 - INFO - Creating placeholder relationship table
+2025-04-14 09:42:45,863 - INFO - Created placeholder relationship table with 5 rows
+2025-04-14 09:42:45,865 - INFO - Created metro counties DataFrame with 5 rows
+2025-04-14 09:42:45,865 - INFO - Creating additional mappings...
+2025-04-14 09:42:45,868 - INFO - Successfully created additional mappings
+2025-04-14 09:42:45,875 - INFO - Saved CBSA information to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_info_20250414.csv
+2025-04-14 09:42:45,875 - INFO - Saved metro counties to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/metro_counties_20250414.csv
+2025-04-14 09:42:45,875 - INFO - Saved CBSA mappings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_mappings_20250414.json
+2025-04-14 09:42:45,876 - INFO - Saved combined crosswalk data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-14 09:42:45,876 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/README.md
+2025-04-14 09:42:45,876 - INFO - CBSA crosswalk processing complete!
+2025-04-14 09:47:39,046 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-14 09:47:42,972 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_tiger_20250414.zip
+2025-04-14 09:47:42,973 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip...
+2025-04-14 09:47:52,588 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/county_tiger_20250414.zip
+2025-04-14 09:47:52,599 - INFO - Processing CBSA data from TIGER/Line shapefile
+2025-04-14 09:47:52,600 - INFO - Found DBF file: tl_2023_us_cbsa.dbf
+2025-04-14 09:47:52,974 - INFO - Loaded 935 rows from tl_2023_us_cbsa.shp using GeoPandas
+2025-04-14 09:47:52,980 - INFO - Processed CBSA data with 393 Metropolitan Statistical Areas
+2025-04-14 09:47:52,989 - INFO - Processing county data from TIGER/Line shapefile
+2025-04-14 09:47:52,989 - INFO - Found DBF file: tl_2023_us_county.dbf
+2025-04-14 09:47:53,562 - INFO - Loaded 3235 rows from tl_2023_us_county.shp using GeoPandas
+2025-04-14 09:47:53,575 - INFO - Processed county data with 3235 counties
+2025-04-14 09:47:53,575 - INFO - Getting CBSA-to-county relationships from Census API
+2025-04-14 09:47:53,575 - WARNING - Census API key required - replace 'YOUR_API_KEY' with your actual API key
+2025-04-14 09:47:53,575 - INFO - Attempting to create relationships from downloaded TIGER/Line files
+2025-04-14 09:47:53,575 - INFO - Creating placeholder relationship table
+2025-04-14 09:47:53,575 - INFO - Created placeholder relationship table with 5 rows
+2025-04-14 09:47:53,578 - INFO - Created metro counties DataFrame with 5 rows
+2025-04-14 09:47:53,578 - INFO - Creating additional mappings...
+2025-04-14 09:47:53,580 - INFO - Successfully created additional mappings
+2025-04-14 09:47:53,587 - INFO - Saved CBSA information to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_info_20250414.csv
+2025-04-14 09:47:53,587 - INFO - Saved metro counties to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/metro_counties_20250414.csv
+2025-04-14 09:47:53,587 - INFO - Saved CBSA mappings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_mappings_20250414.json
+2025-04-14 09:47:53,588 - INFO - Saved combined crosswalk data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-14 09:47:53,588 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/README.md
+2025-04-14 09:47:53,588 - INFO - CBSA crosswalk processing complete!

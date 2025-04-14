@@ -1,2 +1,28 @@
 2025-04-07 13:12:26,825 - INFO - Downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls...
 2025-04-07 13:12:26,951 - ERROR - Error downloading https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls: 403 Client Error: Forbidden for url: https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2020/delineation-files/list1_2020.xls
+2025-04-14 10:02:02,934 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-14 10:02:06,993 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_tiger_20250414.zip
+2025-04-14 10:02:06,995 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/COUNTY/tl_2023_us_county.zip...
+2025-04-14 10:02:15,949 - INFO - Downloaded successfully to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/county_tiger_20250414.zip
+2025-04-14 10:02:15,963 - INFO - Processing CBSA data from TIGER/Line shapefile
+2025-04-14 10:02:15,964 - INFO - Found DBF file: tl_2023_us_cbsa.dbf
+2025-04-14 10:02:16,331 - INFO - Loaded 935 rows from tl_2023_us_cbsa.shp using GeoPandas
+2025-04-14 10:02:16,335 - INFO - Processed CBSA data with 393 Metropolitan Statistical Areas
+2025-04-14 10:02:16,344 - INFO - Processing county data from TIGER/Line shapefile
+2025-04-14 10:02:16,344 - INFO - Found DBF file: tl_2023_us_county.dbf
+2025-04-14 10:02:16,974 - INFO - Loaded 3235 rows from tl_2023_us_county.shp using GeoPandas
+2025-04-14 10:02:16,993 - INFO - Processed county data with 3235 counties
+2025-04-14 10:02:16,993 - INFO - Getting CBSA-to-county relationships from Census API
+2025-04-14 10:02:16,993 - WARNING - Census API key required - replace 'YOUR_API_KEY' with your actual API key
+2025-04-14 10:02:16,993 - INFO - Attempting to create relationships from downloaded TIGER/Line files
+2025-04-14 10:02:16,994 - INFO - Creating placeholder relationship table
+2025-04-14 10:02:16,994 - INFO - Created placeholder relationship table with 5 rows
+2025-04-14 10:02:16,997 - INFO - Created metro counties DataFrame with 5 rows
+2025-04-14 10:02:16,997 - INFO - Creating additional mappings...
+2025-04-14 10:02:16,999 - INFO - Successfully created additional mappings
+2025-04-14 10:02:17,004 - INFO - Saved CBSA information to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_info_20250414.csv
+2025-04-14 10:02:17,005 - INFO - Saved metro counties to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/metro_counties_20250414.csv
+2025-04-14 10:02:17,005 - INFO - Saved CBSA mappings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_mappings_20250414.json
+2025-04-14 10:02:17,005 - INFO - Saved combined crosswalk data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-14 10:02:17,005 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/README.md
+2025-04-14 10:02:17,005 - INFO - CBSA crosswalk processing complete!

@@ -1,0 +1,42 @@
+2025-04-14 09:54:37,115 - INFO - Starting IRS SOI data collection
+2025-04-14 09:54:37,115 - INFO - Created directory: irs_soi_data
+2025-04-14 09:54:37,290 - INFO - Found data for these years: ['2022', '2021', '2020', '2019', '2018']
+2025-04-14 09:54:37,291 - INFO - Created directory: irs_soi_data/tax_year_2022
+2025-04-14 09:54:37,291 - INFO - Processing data for tax year 2022
+2025-04-14 09:55:03,137 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/zipcode2022.zip to irs_soi_data/tax_year_2022/irs_soi_zipcode_2022_all.zip
+2025-04-14 09:55:04,120 - INFO - Extracted irs_soi_data/tax_year_2022/irs_soi_zipcode_2022_all.zip to irs_soi_data/tax_year_2022
+2025-04-14 09:55:04,266 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/22zpdoc.docx to irs_soi_data/tax_year_2022/irs_soi_zipcode_2022_documentation.docx
+2025-04-14 09:55:04,555 - INFO - Parsed CSV data from irs_soi_data/tax_year_2022/22zpallnoagi.csv, shape: (27690, 166)
+2025-04-14 09:55:05,492 - INFO - Saved processed data to irs_soi_data/tax_year_2022/irs_soi_zipcode_2022_processed.csv
+2025-04-14 09:55:05,492 - INFO - Created directory: irs_soi_data/tax_year_2021
+2025-04-14 09:55:05,492 - INFO - Processing data for tax year 2021
+2025-04-14 09:55:33,190 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/zipcode2021.zip to irs_soi_data/tax_year_2021/irs_soi_zipcode_2021_all.zip
+2025-04-14 09:55:34,202 - INFO - Extracted irs_soi_data/tax_year_2021/irs_soi_zipcode_2021_all.zip to irs_soi_data/tax_year_2021
+2025-04-14 09:55:34,369 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/21zpdoc.docx to irs_soi_data/tax_year_2021/irs_soi_zipcode_2021_documentation.docx
+2025-04-14 09:55:37,120 - INFO - Parsed CSV data from irs_soi_data/tax_year_2021/21zpallagi.csv, shape: (166221, 168)
+2025-04-14 09:55:42,347 - INFO - Saved processed data to irs_soi_data/tax_year_2021/irs_soi_zipcode_2021_processed.csv
+2025-04-14 09:55:42,347 - INFO - Created directory: irs_soi_data/tax_year_2020
+2025-04-14 09:55:42,348 - INFO - Processing data for tax year 2020
+2025-04-14 09:56:11,925 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/zipcode2020.zip to irs_soi_data/tax_year_2020/irs_soi_zipcode_2020_all.zip
+2025-04-14 09:56:12,958 - INFO - Extracted irs_soi_data/tax_year_2020/irs_soi_zipcode_2020_all.zip to irs_soi_data/tax_year_2020
+2025-04-14 09:56:13,141 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/20zpdoc.docx to irs_soi_data/tax_year_2020/irs_soi_zipcode_2020_documentation.docx
+2025-04-14 09:56:15,834 - INFO - Parsed CSV data from irs_soi_data/tax_year_2020/20zpallagi.csv, shape: (166452, 166)
+2025-04-14 09:56:21,040 - INFO - Saved processed data to irs_soi_data/tax_year_2020/irs_soi_zipcode_2020_processed.csv
+2025-04-14 09:56:21,040 - INFO - Created directory: irs_soi_data/tax_year_2019
+2025-04-14 09:56:21,040 - INFO - Processing data for tax year 2019
+2025-04-14 09:56:50,790 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/zipcode2019.zip to irs_soi_data/tax_year_2019/irs_soi_zipcode_2019_all.zip
+2025-04-14 09:56:51,723 - INFO - Extracted irs_soi_data/tax_year_2019/irs_soi_zipcode_2019_all.zip to irs_soi_data/tax_year_2019
+2025-04-14 09:56:51,999 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/19zpdoc.docx to irs_soi_data/tax_year_2019/irs_soi_zipcode_2019_documentation.docx
+2025-04-14 09:56:52,316 - INFO - Parsed CSV data from irs_soi_data/tax_year_2019/19zpallnoagi.csv, shape: (27695, 153)
+2025-04-14 09:56:53,257 - INFO - Saved processed data to irs_soi_data/tax_year_2019/irs_soi_zipcode_2019_processed.csv
+2025-04-14 09:56:53,258 - INFO - Created directory: irs_soi_data/tax_year_2018
+2025-04-14 09:56:53,258 - INFO - Processing data for tax year 2018
+2025-04-14 09:57:16,031 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/zipcode2018.zip to irs_soi_data/tax_year_2018/irs_soi_zipcode_2018_all.zip
+2025-04-14 09:57:17,123 - INFO - Extracted irs_soi_data/tax_year_2018/irs_soi_zipcode_2018_all.zip to irs_soi_data/tax_year_2018
+2025-04-14 09:57:17,272 - INFO - Downloaded https://www.irs.gov/pub/irs-soi/18zpdoc.docx to irs_soi_data/tax_year_2018/irs_soi_zipcode_2018_documentation.docx
+2025-04-14 09:57:19,819 - INFO - Parsed CSV data from irs_soi_data/tax_year_2018/18zpallagi.csv, shape: (165935, 154)
+2025-04-14 09:57:24,992 - INFO - Saved processed data to irs_soi_data/tax_year_2018/irs_soi_zipcode_2018_processed.csv
+2025-04-14 09:57:46,221 - INFO - Saved combined data from all years to irs_soi_data/irs_soi_zipcode_all_years.csv
+2025-04-14 09:57:46,222 - INFO - Saved data dictionary to irs_soi_data/irs_soi_data_dictionary.json
+2025-04-14 09:57:46,222 - INFO - Saved README to irs_soi_data/README.md
+2025-04-14 09:57:46,222 - INFO - IRS SOI data collection completed in 189.11 seconds

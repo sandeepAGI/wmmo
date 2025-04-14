@@ -1,0 +1,28 @@
+2025-04-14 10:02:25,820 - INFO - Starting financial services coverage metrics calculation...
+2025-04-14 10:02:25,820 - INFO - Loading MSA-level data...
+2025-04-14 10:02:25,820 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250414.csv
+2025-04-14 10:02:25,822 - INFO - Loading BLS 2024 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-14 10:02:25,824 - INFO - Loading BLS 2023 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-14 10:02:25,826 - INFO - Loading BLS 2022 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-14 10:02:25,828 - INFO - Loading BLS 2021 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-14 10:02:25,829 - INFO - Loading BLS 2020 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-14 10:02:25,830 - INFO - Loading MSA reference data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250414.csv
+2025-04-14 10:02:25,831 - INFO - Loaded MSA data: combined, bls_2024, bls_2023, bls_2022, bls_2021, bls_2020, reference
+2025-04-14 10:02:25,831 - INFO - Checking for HNWI density metrics...
+2025-04-14 10:02:25,831 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250414.csv
+2025-04-14 10:02:25,831 - INFO - Using HNWI metrics as base for calculations
+2025-04-14 10:02:25,831 - INFO - Calculating Advisor Penetration Rate...
+2025-04-14 10:02:25,831 - WARNING - BLS data doesn't have CBSA code column
+2025-04-14 10:02:25,831 - WARNING - Unable to calculate Advisor Penetration Rate
+2025-04-14 10:02:25,831 - INFO - Calculating HNWI-to-Advisor Ratio...
+2025-04-14 10:02:25,832 - WARNING - Missing required columns for HNWI-to-Advisor Ratio: ['total_households', 'total_advisors']
+2025-04-14 10:02:25,832 - INFO - Estimating market opportunity...
+2025-04-14 10:02:25,833 - INFO - Calculated opportunity scores using 1 metrics
+2025-04-14 10:02:25,833 - INFO - Creating financial services coverage rankings...
+2025-04-14 10:02:25,834 - INFO - Created coverage rankings using 1 metrics
+2025-04-14 10:02:25,834 - INFO - Saving results...
+2025-04-14 10:02:25,835 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250414.csv
+2025-04-14 10:02:25,836 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/coverage_opportunity_rankings_20250414.csv
+2025-04-14 10:02:25,837 - INFO - Saved top market opportunities to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/top_market_opportunities_20250414.csv
+2025-04-14 10:02:25,837 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_documentation.md
+2025-04-14 10:02:25,837 - INFO - Financial services coverage metrics calculation complete!

@@ -2,3 +2,64 @@
 2025-04-07 13:15:08,276 - INFO - Loading CBSA crosswalk data...
 2025-04-07 13:15:08,276 - ERROR - No crosswalk pickle files found. Run census_cbsa_crosswalk.py first.
 2025-04-07 13:15:08,276 - ERROR - Failed to load crosswalk data. Exiting.
+2025-04-14 10:02:17,543 - INFO - Starting county-to-MSA aggregation process...
+2025-04-14 10:02:17,544 - INFO - Loading CBSA crosswalk data...
+2025-04-14 10:02:17,544 - INFO - Using crosswalk file: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-14 10:02:17,544 - INFO - Loaded crosswalk data with 393 CBSAs and 5 counties
+2025-04-14 10:02:17,544 - INFO - Loading BEA data...
+2025-04-14 10:02:17,545 - INFO - Loading GDP data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_gdp_2023_2024_A.csv
+2025-04-14 10:02:17,550 - INFO - Loading Personal Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_personal_income_2023_2024_A.csv
+2025-04-14 10:02:17,555 - INFO - Loading Population data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_population_2023_2024_A.csv
+2025-04-14 10:02:17,558 - INFO - Loading Per Capita Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_per_capita_income_2023_2024_A.csv
+2025-04-14 10:02:17,562 - INFO - Loaded BEA data: gdp, personal_income, population, per_capita_income
+2025-04-14 10:02:17,562 - INFO - Loading Census ACS data...
+2025-04-14 10:02:17,563 - INFO - Loading Census ACS data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../census_acs_data/census_acs_county_data_2023_20250407_083613.csv
+2025-04-14 10:02:17,571 - INFO - Loaded Census ACS data with 3222 counties
+2025-04-14 10:02:17,572 - INFO - Loaded Census ACS data dictionary with 32 variables
+2025-04-14 10:02:17,572 - INFO - Loading IRS SOI data...
+2025-04-14 10:02:17,573 - INFO - Loading combined IRS SOI data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../irs_soi_data/irs_soi_zipcode_all_years.csv
+2025-04-14 10:02:21,158 - INFO - Loaded IRS SOI data dictionary with 39 fields
+2025-04-14 10:02:21,159 - INFO - Loaded IRS SOI data for 1 datasets
+2025-04-14 10:02:21,159 - INFO - Loading FDIC deposit data...
+2025-04-14 10:02:21,159 - INFO - Loading FDIC deposit data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2020.csv
+2025-04-14 10:02:21,872 - INFO - Loading FDIC deposit data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2021.csv
+2025-04-14 10:02:22,560 - INFO - Loading FDIC deposit data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2022.csv
+2025-04-14 10:02:23,306 - INFO - Loading FDIC deposit data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2023.csv
+2025-04-14 10:02:24,011 - INFO - Loading FDIC deposit data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2024.csv
+2025-04-14 10:02:24,699 - INFO - Loaded FDIC data dictionary with 38 fields
+2025-04-14 10:02:24,699 - INFO - Loaded FDIC deposit data for 0 years
+2025-04-14 10:02:24,709 - INFO - Loading BLS advisor data...
+2025-04-14 10:02:24,709 - INFO - Loading BLS advisor data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-14 10:02:24,713 - INFO - Loading BLS advisor data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-14 10:02:24,716 - INFO - Loading BLS advisor data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-14 10:02:24,718 - INFO - Loading BLS advisor data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-14 10:02:24,720 - INFO - Loading BLS advisor data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-14 10:02:24,722 - INFO - Loaded BLS advisor data dictionary
+2025-04-14 10:02:24,722 - INFO - Loaded BLS advisor data for 5 years
+2025-04-14 10:02:24,722 - INFO - Aggregating BEA data to MSA level...
+2025-04-14 10:02:24,722 - INFO - Aggregating GDP data...
+2025-04-14 10:02:24,728 - INFO - Aggregating Population data...
+2025-04-14 10:02:24,730 - INFO - Aggregating Personal Income data...
+2025-04-14 10:02:24,733 - INFO - BEA data aggregation complete. Created 5 MSA-level datasets.
+2025-04-14 10:02:24,733 - INFO - Aggregating Census ACS data to MSA level...
+2025-04-14 10:02:24,741 - INFO - Census ACS data aggregation complete with 5 MSAs
+2025-04-14 10:02:24,741 - INFO - Aggregating IRS SOI data to MSA level...
+2025-04-14 10:02:25,035 - WARNING - ZIP code to MSA mapping is approximated and needs improvement in production
+2025-04-14 10:02:25,058 - INFO - Created placeholder IRS data at MSA level (requires ZIP-to-county mapping)
+2025-04-14 10:02:25,073 - INFO - Aggregating FDIC deposit data to MSA level...
+2025-04-14 10:02:25,073 - WARNING - No FDIC deposit data available for aggregation.
+2025-04-14 10:02:25,073 - INFO - Combining MSA-level data from all sources...
+2025-04-14 10:02:25,074 - INFO - Created MSA reference table with 5 MSAs
+2025-04-14 10:02:25,077 - INFO - Created combined metrics table with 5 MSAs and 8 columns
+2025-04-14 10:02:25,077 - INFO - Saving output files...
+2025-04-14 10:02:25,079 - INFO - Saved combined metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250414.csv
+2025-04-14 10:02:25,079 - INFO - Saved MSA reference to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250414.csv
+2025-04-14 10:02:25,080 - INFO - Saved BEA gdp data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_20250414.csv
+2025-04-14 10:02:25,080 - INFO - Saved BEA gdp_growth data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250414.csv
+2025-04-14 10:02:25,081 - INFO - Saved BEA population data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_population_20250414.csv
+2025-04-14 10:02:25,081 - INFO - Saved BEA personal_income data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_personal_income_20250414.csv
+2025-04-14 10:02:25,081 - INFO - Saved BEA per_capita_income_calculated data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_per_capita_income_calculated_20250414.csv
+2025-04-14 10:02:25,082 - INFO - Saved Census acs data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250414.csv
+2025-04-14 10:02:25,082 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/README.md
+2025-04-14 10:02:25,082 - INFO - All output files saved successfully
+2025-04-14 10:02:25,082 - INFO - County-to-MSA aggregation process complete!
