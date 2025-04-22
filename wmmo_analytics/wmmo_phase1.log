@@ -758,3 +758,805 @@
 2025-04-14 10:02:25,881 - INFO - Created Phase 1 summary report at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250414.md
 2025-04-14 10:02:25,881 - INFO - Phase 1 summary report available at: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250414.md
 2025-04-14 10:02:25,881 - INFO - Phase 1 of Wealth Management Market Opportunity Analysis complete!
+2025-04-16 07:10:40,847 - INFO - Starting Phase 1 of Wealth Management Market Opportunity Analysis
+2025-04-16 07:10:40,899 - INFO - Refreshing data from original sources...
+2025-04-16 07:10:40,899 - INFO - Starting: BEA Regional Economic Accounts data collection
+2025-04-16 07:10:41,782 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:10:41,782 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bea.py", line 3, in <module>
+2025-04-16 07:10:41,782 - WARNING -       import pandas as pd
+2025-04-16 07:10:41,782 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:10:41,783 - WARNING -       raise ImportError(
+2025-04-16 07:10:41,783 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:10:41,783 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:10:41,783 - ERROR - Failed: BEA Regional Economic Accounts data collection (Return code: 1)
+2025-04-16 07:10:41,783 - INFO - Starting: Census ACS data collection
+2025-04-16 07:10:41,905 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:10:41,905 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_census_acs.py", line 3, in <module>
+2025-04-16 07:10:41,905 - WARNING -       import pandas as pd
+2025-04-16 07:10:41,905 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:10:41,905 - WARNING -       raise ImportError(
+2025-04-16 07:10:41,905 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:10:41,905 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:10:41,905 - ERROR - Failed: Census ACS data collection (Return code: 1)
+2025-04-16 07:10:41,905 - INFO - Starting: IRS SOI data collection
+2025-04-16 07:10:42,037 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:10:42,037 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_irs_soi.py", line 15, in <module>
+2025-04-16 07:10:42,037 - WARNING -       import pandas as pd
+2025-04-16 07:10:42,037 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:10:42,037 - WARNING -       raise ImportError(
+2025-04-16 07:10:42,037 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:10:42,037 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:10:42,037 - ERROR - Failed: IRS SOI data collection (Return code: 1)
+2025-04-16 07:10:42,037 - INFO - Starting: FDIC deposit data collection
+2025-04-16 07:10:42,174 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:10:42,174 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_fdic_deposits.py", line 20, in <module>
+2025-04-16 07:10:42,174 - WARNING -       import pandas as pd
+2025-04-16 07:10:42,174 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:10:42,174 - WARNING -       raise ImportError(
+2025-04-16 07:10:42,174 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:10:42,174 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:10:42,174 - ERROR - Failed: FDIC deposit data collection (Return code: 1)
+2025-04-16 07:10:42,174 - INFO - Starting: BLS advisors data collection
+2025-04-16 07:10:42,241 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:10:42,241 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bls_advisors.py", line 4, in <module>
+2025-04-16 07:10:42,241 - WARNING -       import pandas as pd
+2025-04-16 07:10:42,241 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:10:42,241 - WARNING -       raise ImportError(
+2025-04-16 07:10:42,241 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:10:42,241 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:10:42,241 - ERROR - Failed: BLS advisors data collection (Return code: 1)
+2025-04-16 07:10:42,241 - WARNING - Data refresh had issues, but continuing with existing data
+2025-04-16 07:10:42,241 - INFO - Starting: County-to-MSA crosswalk creation
+2025-04-16 07:10:44,283 - WARNING -   2025-04-16 07:10:44,125 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 07:10:44,283 - WARNING -   2025-04-16 07:10:44,238 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 07:10:44,283 - WARNING -   2025-04-16 07:10:44,238 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 07:10:44,283 - INFO - Completed: County-to-MSA crosswalk creation
+2025-04-16 07:10:44,283 - INFO - Found 1 files matching cbsa_crosswalk_data_*.pkl in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks
+2025-04-16 07:10:44,283 - INFO - Starting: County-to-MSA data aggregation
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,592 - INFO - Starting county-to-MSA aggregation process...
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,593 - INFO - Loading CBSA crosswalk data...
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,593 - INFO - Using crosswalk file: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,594 - INFO - Loaded crosswalk data with 393 CBSAs and 5 counties
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,595 - INFO - Loading BEA data...
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,595 - INFO - Loading GDP data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_gdp_2023_2024_A.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,672 - INFO - Loading Personal Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_personal_income_2023_2024_A.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,677 - INFO - Loading Population data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_population_2023_2024_A.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,680 - INFO - Loading Per Capita Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_per_capita_income_2023_2024_A.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,684 - INFO - Loaded BEA data: gdp, personal_income, population, per_capita_income
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,684 - INFO - Loading Census ACS data...
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,684 - INFO - Loading Census ACS data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../census_acs_data/census_acs_county_data_2023_20250407_083613.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,692 - INFO - Loaded Census ACS data with 3222 counties
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,692 - INFO - Loaded Census ACS data dictionary with 32 variables
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,692 - INFO - Loading IRS SOI data...
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:44,693 - INFO - Loading combined IRS SOI data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../irs_soi_data/irs_soi_zipcode_all_years.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:47,848 - INFO - Loaded IRS SOI data dictionary with 39 fields
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:47,848 - INFO - Loaded IRS SOI data for 1 datasets
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:47,848 - INFO - Loading FDIC deposit data...
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:47,848 - INFO - Loading FDIC deposit data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2020.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:48,547 - INFO - Loading FDIC deposit data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2021.csv
+2025-04-16 07:10:51,431 - WARNING -   2025-04-16 07:10:49,235 - INFO - Loading FDIC deposit data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2022.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:49,906 - INFO - Loading FDIC deposit data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2023.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:50,569 - INFO - Loading FDIC deposit data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2024.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,222 - INFO - Loaded FDIC data dictionary with 38 fields
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,222 - INFO - Loaded FDIC deposit data for 0 years
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,232 - INFO - Loading BLS advisor data...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,232 - INFO - Loading BLS advisor data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,234 - INFO - Loading BLS advisor data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,236 - INFO - Loading BLS advisor data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,238 - INFO - Loading BLS advisor data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,240 - INFO - Loading BLS advisor data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,242 - INFO - Loaded BLS advisor data dictionary
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,242 - INFO - Loaded BLS advisor data for 5 years
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,242 - INFO - Aggregating BEA data to MSA level...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,242 - INFO - Aggregating GDP data...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,245 - INFO - Aggregating Population data...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,247 - INFO - Aggregating Personal Income data...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,249 - INFO - BEA data aggregation complete. Created 5 MSA-level datasets.
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,249 - INFO - Aggregating Census ACS data to MSA level...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,255 - INFO - Census ACS data aggregation complete with 5 MSAs
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,255 - INFO - Aggregating IRS SOI data to MSA level...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,356 - WARNING - ZIP code to MSA mapping is approximated and needs improvement in production
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,374 - INFO - Created placeholder IRS data at MSA level (requires ZIP-to-county mapping)
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,382 - INFO - Aggregating FDIC deposit data to MSA level...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,382 - WARNING - No FDIC deposit data available for aggregation.
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,382 - INFO - Combining MSA-level data from all sources...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,383 - INFO - Created MSA reference table with 5 MSAs
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,385 - INFO - Created combined metrics table with 5 MSAs and 8 columns
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,385 - INFO - Saving output files...
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,386 - INFO - Saved combined metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,386 - INFO - Saved MSA reference to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,387 - INFO - Saved BEA gdp data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,387 - INFO - Saved BEA gdp_growth data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,387 - INFO - Saved BEA population data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_population_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,387 - INFO - Saved BEA personal_income data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_personal_income_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,387 - INFO - Saved BEA per_capita_income_calculated data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_per_capita_income_calculated_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,388 - INFO - Saved Census acs data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,388 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/README.md
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,388 - INFO - All output files saved successfully
+2025-04-16 07:10:51,432 - WARNING -   2025-04-16 07:10:51,388 - INFO - County-to-MSA aggregation process complete!
+2025-04-16 07:10:51,432 - INFO - Completed: County-to-MSA data aggregation
+2025-04-16 07:10:51,432 - INFO - Found 1 files matching msa_combined_metrics_*.csv in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata
+2025-04-16 07:10:51,432 - INFO - Starting: HNWI density metrics calculation
+2025-04-16 07:10:51,764 - WARNING -   2025-04-16 07:10:51,732 - INFO - Starting HNWI density metrics calculation...
+2025-04-16 07:10:51,764 - WARNING -   2025-04-16 07:10:51,732 - INFO - Loading MSA-level data...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,732 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,735 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,735 - INFO - Loading Census ACS data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,736 - INFO - Loaded MSA data: combined, gdp, acs
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,736 - INFO - Calculating HNWI Density Index...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,737 - INFO - Calculated HNWI Density Index using 3 indicators
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,737 - INFO - Calculating Wealth Growth Rate...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - ERROR - Error calculating Wealth Growth Rate: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured'], dtype='object')] are in the [columns]"
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - INFO - Calculating Luxury Real Estate Quotient...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - INFO - Using pre-calculated Luxury Real Estate Quotient
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - INFO - Calculating Income Elite Ratio...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - INFO - Using pre-calculated Income Elite Ratio
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - INFO - Calculating Banking Deposit Intensity...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,738 - WARNING - No suitable data available to calculate Banking Deposit Intensity
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,739 - INFO - Creating HNWI density rankings...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,739 - INFO - Created HNWI density rankings using 2 metrics
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,739 - INFO - Saving results...
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,740 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,740 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_rankings_20250416.csv
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,741 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_documentation.md
+2025-04-16 07:10:51,765 - WARNING -   2025-04-16 07:10:51,741 - INFO - HNWI density metrics calculation complete!
+2025-04-16 07:10:51,765 - INFO - Completed: HNWI density metrics calculation
+2025-04-16 07:10:51,765 - INFO - Starting: Financial services coverage metrics calculation
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,067 - INFO - Starting financial services coverage metrics calculation...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,068 - INFO - Loading MSA-level data...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,068 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,070 - INFO - Loading BLS 2024 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,072 - INFO - Loading BLS 2023 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,074 - INFO - Loading BLS 2022 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,075 - INFO - Loading BLS 2021 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,077 - INFO - Loading BLS 2020 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,078 - INFO - Loading MSA reference data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,078 - INFO - Loaded MSA data: combined, bls_2024, bls_2023, bls_2022, bls_2021, bls_2020, reference
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,078 - INFO - Checking for HNWI density metrics...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,078 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - INFO - Using HNWI metrics as base for calculations
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - INFO - Calculating Advisor Penetration Rate...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - WARNING - BLS data doesn't have CBSA code column
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - WARNING - Unable to calculate Advisor Penetration Rate
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - INFO - Calculating HNWI-to-Advisor Ratio...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - WARNING - Missing required columns for HNWI-to-Advisor Ratio: ['total_households', 'total_advisors']
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,079 - INFO - Estimating market opportunity...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,080 - INFO - Calculated opportunity scores using 1 metrics
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,080 - INFO - Creating financial services coverage rankings...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,081 - INFO - Created coverage rankings using 1 metrics
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,081 - INFO - Saving results...
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,082 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,082 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/coverage_opportunity_rankings_20250416.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,083 - INFO - Saved top market opportunities to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/top_market_opportunities_20250416.csv
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,083 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_documentation.md
+2025-04-16 07:10:52,108 - WARNING -   2025-04-16 07:10:52,083 - INFO - Financial services coverage metrics calculation complete!
+2025-04-16 07:10:52,108 - INFO - Completed: Financial services coverage metrics calculation
+2025-04-16 07:10:52,108 - INFO - Starting: Economic vitality metrics calculation
+2025-04-16 07:10:52,122 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics.py", line 255
+2025-04-16 07:10:52,122 - WARNING -       '2012': 'Proprietors' income',  # Business owners
+2025-04-16 07:10:52,122 - WARNING -                                   ^
+2025-04-16 07:10:52,122 - WARNING -   SyntaxError: unterminated string literal (detected at line 255)
+2025-04-16 07:10:52,122 - ERROR - Failed: Economic vitality metrics calculation (Return code: 1)
+2025-04-16 07:10:52,122 - WARNING - Failed to calculate economic vitality metrics.
+2025-04-16 07:10:52,122 - INFO - Creating Phase 1 summary report...
+2025-04-16 07:10:52,123 - INFO - Created Phase 1 summary report at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 07:10:52,123 - INFO - Phase 1 summary report available at: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 07:10:52,123 - INFO - Phase 1 of Wealth Management Market Opportunity Analysis complete!
+2025-04-16 07:15:58,172 - INFO - Starting Phase 1 of Wealth Management Market Opportunity Analysis
+2025-04-16 07:15:58,174 - INFO - Refreshing data from original sources...
+2025-04-16 07:15:58,175 - INFO - Starting: BEA Regional Economic Accounts data collection
+2025-04-16 07:15:58,333 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:15:58,333 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bea.py", line 3, in <module>
+2025-04-16 07:15:58,333 - WARNING -       import pandas as pd
+2025-04-16 07:15:58,333 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:15:58,333 - WARNING -       raise ImportError(
+2025-04-16 07:15:58,333 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:15:58,333 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:15:58,333 - ERROR - Failed: BEA Regional Economic Accounts data collection (Return code: 1)
+2025-04-16 07:15:58,333 - INFO - Starting: Census ACS data collection
+2025-04-16 07:15:58,466 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:15:58,466 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_census_acs.py", line 3, in <module>
+2025-04-16 07:15:58,466 - WARNING -       import pandas as pd
+2025-04-16 07:15:58,466 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:15:58,466 - WARNING -       raise ImportError(
+2025-04-16 07:15:58,466 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:15:58,466 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:15:58,466 - ERROR - Failed: Census ACS data collection (Return code: 1)
+2025-04-16 07:15:58,466 - INFO - Starting: IRS SOI data collection
+2025-04-16 07:15:58,600 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:15:58,600 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_irs_soi.py", line 15, in <module>
+2025-04-16 07:15:58,600 - WARNING -       import pandas as pd
+2025-04-16 07:15:58,600 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:15:58,600 - WARNING -       raise ImportError(
+2025-04-16 07:15:58,600 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:15:58,600 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:15:58,600 - ERROR - Failed: IRS SOI data collection (Return code: 1)
+2025-04-16 07:15:58,600 - INFO - Starting: FDIC deposit data collection
+2025-04-16 07:15:58,723 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:15:58,723 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_fdic_deposits.py", line 20, in <module>
+2025-04-16 07:15:58,723 - WARNING -       import pandas as pd
+2025-04-16 07:15:58,723 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:15:58,724 - WARNING -       raise ImportError(
+2025-04-16 07:15:58,724 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:15:58,724 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:15:58,724 - ERROR - Failed: FDIC deposit data collection (Return code: 1)
+2025-04-16 07:15:58,724 - INFO - Starting: BLS advisors data collection
+2025-04-16 07:15:58,794 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:15:58,794 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bls_advisors.py", line 4, in <module>
+2025-04-16 07:15:58,794 - WARNING -       import pandas as pd
+2025-04-16 07:15:58,794 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:15:58,794 - WARNING -       raise ImportError(
+2025-04-16 07:15:58,794 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:15:58,794 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:15:58,794 - ERROR - Failed: BLS advisors data collection (Return code: 1)
+2025-04-16 07:15:58,794 - WARNING - Data refresh had issues, but continuing with existing data
+2025-04-16 07:15:58,794 - INFO - Starting: County-to-MSA crosswalk creation
+2025-04-16 07:15:59,351 - WARNING -   2025-04-16 07:15:59,208 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 07:15:59,351 - WARNING -   2025-04-16 07:15:59,312 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 07:15:59,351 - WARNING -   2025-04-16 07:15:59,312 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 07:15:59,351 - INFO - Completed: County-to-MSA crosswalk creation
+2025-04-16 07:15:59,351 - INFO - Found 1 files matching cbsa_crosswalk_data_*.pkl in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks
+2025-04-16 07:15:59,351 - INFO - Starting: County-to-MSA data aggregation
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,881 - INFO - Starting county-to-MSA aggregation process...
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,881 - INFO - Loading CBSA crosswalk data...
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,881 - INFO - Using crosswalk file: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,882 - INFO - Loaded crosswalk data with 393 CBSAs and 5 counties
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,882 - INFO - Loading BEA data...
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,883 - INFO - Loading GDP data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_gdp_2023_2024_A.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,892 - INFO - Loading Personal Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_personal_income_2023_2024_A.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,896 - INFO - Loading Population data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_population_2023_2024_A.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,900 - INFO - Loading Per Capita Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_per_capita_income_2023_2024_A.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,903 - INFO - Loaded BEA data: gdp, personal_income, population, per_capita_income
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,903 - INFO - Loading Census ACS data...
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,904 - INFO - Loading Census ACS data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../census_acs_data/census_acs_county_data_2023_20250407_083613.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,911 - INFO - Loaded Census ACS data with 3222 counties
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,912 - INFO - Loaded Census ACS data dictionary with 32 variables
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,912 - INFO - Loading IRS SOI data...
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:15:59,912 - INFO - Loading combined IRS SOI data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../irs_soi_data/irs_soi_zipcode_all_years.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:03,525 - INFO - Loaded IRS SOI data dictionary with 39 fields
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:03,526 - INFO - Loaded IRS SOI data for 1 datasets
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:03,526 - INFO - Loading FDIC deposit data...
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:03,526 - INFO - Loading FDIC deposit data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2020.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:04,227 - INFO - Loading FDIC deposit data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2021.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:04,917 - INFO - Loading FDIC deposit data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2022.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:05,593 - INFO - Loading FDIC deposit data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2023.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:06,259 - INFO - Loading FDIC deposit data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2024.csv
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:06,912 - INFO - Loaded FDIC data dictionary with 38 fields
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:06,912 - INFO - Loaded FDIC deposit data for 0 years
+2025-04-16 07:16:07,151 - WARNING -   2025-04-16 07:16:06,923 - INFO - Loading BLS advisor data...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,923 - INFO - Loading BLS advisor data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,926 - INFO - Loading BLS advisor data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,928 - INFO - Loading BLS advisor data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,931 - INFO - Loading BLS advisor data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,934 - INFO - Loading BLS advisor data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,936 - INFO - Loaded BLS advisor data dictionary
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,936 - INFO - Loaded BLS advisor data for 5 years
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,936 - INFO - Aggregating BEA data to MSA level...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,936 - INFO - Aggregating GDP data...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,941 - INFO - Aggregating Population data...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,943 - INFO - Aggregating Personal Income data...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,945 - INFO - BEA data aggregation complete. Created 5 MSA-level datasets.
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,945 - INFO - Aggregating Census ACS data to MSA level...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,952 - INFO - Census ACS data aggregation complete with 5 MSAs
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:06,952 - INFO - Aggregating IRS SOI data to MSA level...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,071 - WARNING - ZIP code to MSA mapping is approximated and needs improvement in production
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,090 - INFO - Created placeholder IRS data at MSA level (requires ZIP-to-county mapping)
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,098 - INFO - Aggregating FDIC deposit data to MSA level...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,098 - WARNING - No FDIC deposit data available for aggregation.
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,098 - INFO - Combining MSA-level data from all sources...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,100 - INFO - Created MSA reference table with 5 MSAs
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,104 - INFO - Created combined metrics table with 5 MSAs and 8 columns
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,104 - INFO - Saving output files...
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,105 - INFO - Saved combined metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,105 - INFO - Saved MSA reference to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,105 - INFO - Saved BEA gdp data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,105 - INFO - Saved BEA gdp_growth data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - Saved BEA population data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_population_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - Saved BEA personal_income data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_personal_income_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - Saved BEA per_capita_income_calculated data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_per_capita_income_calculated_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - Saved Census acs data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/README.md
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - All output files saved successfully
+2025-04-16 07:16:07,152 - WARNING -   2025-04-16 07:16:07,106 - INFO - County-to-MSA aggregation process complete!
+2025-04-16 07:16:07,152 - INFO - Completed: County-to-MSA data aggregation
+2025-04-16 07:16:07,152 - INFO - Found 1 files matching msa_combined_metrics_*.csv in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata
+2025-04-16 07:16:07,152 - INFO - Starting: HNWI density metrics calculation
+2025-04-16 07:16:07,451 - WARNING -   2025-04-16 07:16:07,417 - INFO - Starting HNWI density metrics calculation...
+2025-04-16 07:16:07,451 - WARNING -   2025-04-16 07:16:07,417 - INFO - Loading MSA-level data...
+2025-04-16 07:16:07,451 - WARNING -   2025-04-16 07:16:07,418 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:16:07,451 - WARNING -   2025-04-16 07:16:07,420 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:16:07,451 - WARNING -   2025-04-16 07:16:07,420 - INFO - Loading Census ACS data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,421 - INFO - Loaded MSA data: combined, gdp, acs
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,421 - INFO - Calculating HNWI Density Index...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,422 - INFO - Calculated HNWI Density Index using 3 indicators
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,422 - INFO - Calculating Wealth Growth Rate...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - ERROR - Error calculating Wealth Growth Rate: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured'], dtype='object')] are in the [columns]"
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - INFO - Calculating Luxury Real Estate Quotient...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - INFO - Using pre-calculated Luxury Real Estate Quotient
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - INFO - Calculating Income Elite Ratio...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - INFO - Using pre-calculated Income Elite Ratio
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - INFO - Calculating Banking Deposit Intensity...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - WARNING - No suitable data available to calculate Banking Deposit Intensity
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,424 - INFO - Creating HNWI density rankings...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,426 - INFO - Created HNWI density rankings using 2 metrics
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,426 - INFO - Saving results...
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,426 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,427 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_rankings_20250416.csv
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,427 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_documentation.md
+2025-04-16 07:16:07,452 - WARNING -   2025-04-16 07:16:07,427 - INFO - HNWI density metrics calculation complete!
+2025-04-16 07:16:07,452 - INFO - Completed: HNWI density metrics calculation
+2025-04-16 07:16:07,452 - INFO - Starting: Financial services coverage metrics calculation
+2025-04-16 07:16:07,779 - WARNING -   2025-04-16 07:16:07,739 - INFO - Starting financial services coverage metrics calculation...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,739 - INFO - Loading MSA-level data...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,740 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,741 - INFO - Loading BLS 2024 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,743 - INFO - Loading BLS 2023 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,745 - INFO - Loading BLS 2022 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,746 - INFO - Loading BLS 2021 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,747 - INFO - Loading BLS 2020 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,749 - INFO - Loading MSA reference data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,749 - INFO - Loaded MSA data: combined, bls_2024, bls_2023, bls_2022, bls_2021, bls_2020, reference
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,749 - INFO - Checking for HNWI density metrics...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,749 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - INFO - Using HNWI metrics as base for calculations
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - INFO - Calculating Advisor Penetration Rate...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - WARNING - BLS data doesn't have CBSA code column
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - WARNING - Unable to calculate Advisor Penetration Rate
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - INFO - Calculating HNWI-to-Advisor Ratio...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - WARNING - Missing required columns for HNWI-to-Advisor Ratio: ['total_households', 'total_advisors']
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,750 - INFO - Estimating market opportunity...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,752 - INFO - Calculated opportunity scores using 1 metrics
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,752 - INFO - Creating financial services coverage rankings...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,752 - INFO - Created coverage rankings using 1 metrics
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,752 - INFO - Saving results...
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,753 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,753 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/coverage_opportunity_rankings_20250416.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,755 - INFO - Saved top market opportunities to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/top_market_opportunities_20250416.csv
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,755 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_documentation.md
+2025-04-16 07:16:07,780 - WARNING -   2025-04-16 07:16:07,755 - INFO - Financial services coverage metrics calculation complete!
+2025-04-16 07:16:07,780 - INFO - Completed: Financial services coverage metrics calculation
+2025-04-16 07:16:07,780 - INFO - Starting: Economic vitality metrics calculation
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,075 - INFO - Starting economic vitality metrics calculation...
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,075 - INFO - Loading MSA-level data...
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,075 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,077 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,077 - INFO - Loaded MSA data: combined, gdp
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,077 - INFO - Checking for previously calculated metrics...
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,077 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,078 - INFO - Loading financial services metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,078 - INFO - Loaded previously calculated metrics: hnwi, fs
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,078 - INFO - Calculating GDP Growth Trend...
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,080 - ERROR - Error calculating GDP Growth Trend: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured', 'gdp_total_growth'], dtype='object')] are in the [columns]"
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,080 - INFO - Analyzing wealth-creating industries...
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,080 - WARNING - No industry data available for analysis
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,080 - INFO - Estimating executive density...
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,080 - INFO - Created executive density proxy based on high-income households
+2025-04-16 07:16:08,109 - WARNING -   2025-04-16 07:16:08,080 - INFO - Creating Economic Vitality Index...
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,081 - INFO - Created Economic Vitality Index using 1 metrics
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,081 - INFO - Creating economic vitality rankings...
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,081 - INFO - Created economic vitality rankings using 1 metrics
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,081 - INFO - Combining all metrics...
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,082 - INFO - Added HNWI metrics: hnwi_density_rank
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,083 - INFO - Added financial services metrics: opportunity_score, opportunity_level, coverage_opportunity_rank
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,083 - INFO - Saving results...
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,083 - INFO - Saved economic vitality metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics_20250416.csv
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,084 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_rankings_20250416.csv
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,084 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics_documentation.md
+2025-04-16 07:16:08,110 - WARNING -   2025-04-16 07:16:08,084 - INFO - Economic vitality metrics calculation complete!
+2025-04-16 07:16:08,110 - INFO - Completed: Economic vitality metrics calculation
+2025-04-16 07:16:08,110 - INFO - Creating Phase 1 summary report...
+2025-04-16 07:16:08,110 - INFO - Created Phase 1 summary report at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 07:16:08,110 - INFO - Phase 1 summary report available at: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 07:16:08,111 - INFO - Phase 1 of Wealth Management Market Opportunity Analysis complete!
+2025-04-16 07:23:16,973 - INFO - Starting Phase 1 of Wealth Management Market Opportunity Analysis
+2025-04-16 07:23:16,976 - INFO - Refreshing data from original sources...
+2025-04-16 07:23:16,976 - INFO - Starting: BEA Regional Economic Accounts data collection
+2025-04-16 07:23:18,602 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:23:18,602 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bea.py", line 3, in <module>
+2025-04-16 07:23:18,602 - WARNING -       import pandas as pd
+2025-04-16 07:23:18,602 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:23:18,602 - WARNING -       raise ImportError(
+2025-04-16 07:23:18,602 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:23:18,602 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:23:18,602 - ERROR - Failed: BEA Regional Economic Accounts data collection (Return code: 1)
+2025-04-16 07:23:18,602 - INFO - Starting: Census ACS data collection
+2025-04-16 07:23:18,735 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:23:18,735 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_census_acs.py", line 3, in <module>
+2025-04-16 07:23:18,736 - WARNING -       import pandas as pd
+2025-04-16 07:23:18,736 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:23:18,736 - WARNING -       raise ImportError(
+2025-04-16 07:23:18,736 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:23:18,736 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:23:18,736 - ERROR - Failed: Census ACS data collection (Return code: 1)
+2025-04-16 07:23:18,736 - INFO - Starting: IRS SOI data collection
+2025-04-16 07:23:18,857 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:23:18,857 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_irs_soi.py", line 15, in <module>
+2025-04-16 07:23:18,857 - WARNING -       import pandas as pd
+2025-04-16 07:23:18,857 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:23:18,857 - WARNING -       raise ImportError(
+2025-04-16 07:23:18,857 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:23:18,857 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:23:18,857 - ERROR - Failed: IRS SOI data collection (Return code: 1)
+2025-04-16 07:23:18,857 - INFO - Starting: FDIC deposit data collection
+2025-04-16 07:23:18,976 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:23:18,976 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_fdic_deposits.py", line 20, in <module>
+2025-04-16 07:23:18,976 - WARNING -       import pandas as pd
+2025-04-16 07:23:18,976 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:23:18,976 - WARNING -       raise ImportError(
+2025-04-16 07:23:18,976 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:23:18,976 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:23:18,976 - ERROR - Failed: FDIC deposit data collection (Return code: 1)
+2025-04-16 07:23:18,977 - INFO - Starting: BLS advisors data collection
+2025-04-16 07:23:19,044 - WARNING -   Traceback (most recent call last):
+2025-04-16 07:23:19,044 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bls_advisors.py", line 4, in <module>
+2025-04-16 07:23:19,044 - WARNING -       import pandas as pd
+2025-04-16 07:23:19,044 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 19, in <module>
+2025-04-16 07:23:19,044 - WARNING -       raise ImportError(
+2025-04-16 07:23:19,044 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 07:23:19,044 - WARNING -   numpy: cannot import name randbits
+2025-04-16 07:23:19,044 - ERROR - Failed: BLS advisors data collection (Return code: 1)
+2025-04-16 07:23:19,044 - WARNING - Data refresh had issues, but continuing with existing data
+2025-04-16 07:23:19,044 - INFO - Starting: County-to-MSA crosswalk creation
+2025-04-16 07:23:20,310 - WARNING -   2025-04-16 07:23:20,115 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 07:23:20,310 - WARNING -   2025-04-16 07:23:20,259 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 07:23:20,310 - WARNING -   2025-04-16 07:23:20,259 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 07:23:20,310 - INFO - Completed: County-to-MSA crosswalk creation
+2025-04-16 07:23:20,310 - INFO - Found 1 files matching cbsa_crosswalk_data_*.pkl in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks
+2025-04-16 07:23:20,310 - INFO - Starting: County-to-MSA data aggregation
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,614 - INFO - Starting county-to-MSA aggregation process...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,615 - INFO - Loading CBSA crosswalk data...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,615 - INFO - Using crosswalk file: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,616 - INFO - Loaded crosswalk data with 393 CBSAs and 5 counties
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,616 - INFO - Loading BEA data...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,616 - INFO - Loading GDP data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_gdp_2023_2024_A.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,626 - INFO - Loading Personal Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_personal_income_2023_2024_A.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,630 - INFO - Loading Population data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_population_2023_2024_A.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,634 - INFO - Loading Per Capita Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_per_capita_income_2023_2024_A.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,638 - INFO - Loaded BEA data: gdp, personal_income, population, per_capita_income
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,638 - INFO - Loading Census ACS data...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,638 - INFO - Loading Census ACS data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../census_acs_data/census_acs_county_data_2023_20250407_083613.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,646 - INFO - Loaded Census ACS data with 3222 counties
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,647 - INFO - Loaded Census ACS data dictionary with 32 variables
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,647 - INFO - Loading IRS SOI data...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:20,647 - INFO - Loading combined IRS SOI data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../irs_soi_data/irs_soi_zipcode_all_years.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:24,064 - INFO - Loaded IRS SOI data dictionary with 39 fields
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:24,065 - INFO - Loaded IRS SOI data for 1 datasets
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:24,065 - INFO - Loading FDIC deposit data...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:24,065 - INFO - Loading FDIC deposit data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2020.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:24,755 - INFO - Loading FDIC deposit data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2021.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:25,437 - INFO - Loading FDIC deposit data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2022.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:26,104 - INFO - Loading FDIC deposit data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2023.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:26,758 - INFO - Loading FDIC deposit data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2024.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:27,417 - INFO - Loaded FDIC data dictionary with 38 fields
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:27,417 - INFO - Loaded FDIC deposit data for 0 years
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:27,425 - INFO - Loading BLS advisor data...
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:27,425 - INFO - Loading BLS advisor data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:27,428 - INFO - Loading BLS advisor data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 07:23:27,620 - WARNING -   2025-04-16 07:23:27,429 - INFO - Loading BLS advisor data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,431 - INFO - Loading BLS advisor data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,433 - INFO - Loading BLS advisor data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,435 - INFO - Loaded BLS advisor data dictionary
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,435 - INFO - Loaded BLS advisor data for 5 years
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,435 - INFO - Aggregating BEA data to MSA level...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,435 - INFO - Aggregating GDP data...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,441 - INFO - Aggregating Population data...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,442 - INFO - Aggregating Personal Income data...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,444 - INFO - BEA data aggregation complete. Created 5 MSA-level datasets.
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,444 - INFO - Aggregating Census ACS data to MSA level...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,451 - INFO - Census ACS data aggregation complete with 5 MSAs
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,451 - INFO - Aggregating IRS SOI data to MSA level...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,544 - WARNING - ZIP code to MSA mapping is approximated and needs improvement in production
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,562 - INFO - Created placeholder IRS data at MSA level (requires ZIP-to-county mapping)
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,570 - INFO - Aggregating FDIC deposit data to MSA level...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,570 - WARNING - No FDIC deposit data available for aggregation.
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,570 - INFO - Combining MSA-level data from all sources...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,571 - INFO - Created MSA reference table with 5 MSAs
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,574 - INFO - Created combined metrics table with 5 MSAs and 8 columns
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,574 - INFO - Saving output files...
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,575 - INFO - Saved combined metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,576 - INFO - Saved MSA reference to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,576 - INFO - Saved BEA gdp data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,576 - INFO - Saved BEA gdp_growth data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,576 - INFO - Saved BEA population data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_population_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,576 - INFO - Saved BEA personal_income data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_personal_income_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,577 - INFO - Saved BEA per_capita_income_calculated data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_per_capita_income_calculated_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,577 - INFO - Saved Census acs data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,577 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/README.md
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,577 - INFO - All output files saved successfully
+2025-04-16 07:23:27,621 - WARNING -   2025-04-16 07:23:27,577 - INFO - County-to-MSA aggregation process complete!
+2025-04-16 07:23:27,621 - INFO - Completed: County-to-MSA data aggregation
+2025-04-16 07:23:27,621 - INFO - Found 1 files matching msa_combined_metrics_*.csv in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata
+2025-04-16 07:23:27,621 - INFO - Starting: HNWI density metrics calculation
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,942 - INFO - Starting HNWI density metrics calculation...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,943 - INFO - Loading MSA-level data...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,943 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,945 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,946 - INFO - Loading Census ACS data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,946 - INFO - Loaded MSA data: combined, gdp, acs
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,946 - INFO - Calculating HNWI Density Index...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,948 - INFO - Calculated HNWI Density Index using 3 indicators
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,948 - INFO - Calculating Wealth Growth Rate...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,949 - ERROR - Error calculating Wealth Growth Rate: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured'], dtype='object')] are in the [columns]"
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,949 - INFO - Calculating Luxury Real Estate Quotient...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,950 - INFO - Using pre-calculated Luxury Real Estate Quotient
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,950 - INFO - Calculating Income Elite Ratio...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,950 - INFO - Using pre-calculated Income Elite Ratio
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,950 - INFO - Calculating Banking Deposit Intensity...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,950 - WARNING - No suitable data available to calculate Banking Deposit Intensity
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,950 - INFO - Creating HNWI density rankings...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,951 - INFO - Created HNWI density rankings using 2 metrics
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,951 - INFO - Saving results...
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,952 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,952 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_rankings_20250416.csv
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,952 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_documentation.md
+2025-04-16 07:23:27,979 - WARNING -   2025-04-16 07:23:27,952 - INFO - HNWI density metrics calculation complete!
+2025-04-16 07:23:27,979 - INFO - Completed: HNWI density metrics calculation
+2025-04-16 07:23:27,979 - INFO - Starting: Financial services coverage metrics calculation
+2025-04-16 07:23:28,318 - WARNING -   2025-04-16 07:23:28,278 - INFO - Starting financial services coverage metrics calculation...
+2025-04-16 07:23:28,318 - WARNING -   2025-04-16 07:23:28,279 - INFO - Loading MSA-level data...
+2025-04-16 07:23:28,318 - WARNING -   2025-04-16 07:23:28,279 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,281 - INFO - Loading BLS 2024 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,282 - INFO - Loading BLS 2023 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,284 - INFO - Loading BLS 2022 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,285 - INFO - Loading BLS 2021 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,287 - INFO - Loading BLS 2020 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,288 - INFO - Loading MSA reference data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,288 - INFO - Loaded MSA data: combined, bls_2024, bls_2023, bls_2022, bls_2021, bls_2020, reference
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,288 - INFO - Checking for HNWI density metrics...
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - INFO - Using HNWI metrics as base for calculations
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - INFO - Calculating Advisor Penetration Rate...
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - WARNING - BLS data doesn't have CBSA code column
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - WARNING - Unable to calculate Advisor Penetration Rate
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - INFO - Calculating HNWI-to-Advisor Ratio...
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - WARNING - Missing required columns for HNWI-to-Advisor Ratio: ['total_households', 'total_advisors']
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,289 - INFO - Estimating market opportunity...
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,290 - INFO - Calculated opportunity scores using 1 metrics
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,290 - INFO - Creating financial services coverage rankings...
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,291 - INFO - Created coverage rankings using 1 metrics
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,291 - INFO - Saving results...
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,292 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,292 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/coverage_opportunity_rankings_20250416.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,293 - INFO - Saved top market opportunities to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/top_market_opportunities_20250416.csv
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,293 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_documentation.md
+2025-04-16 07:23:28,319 - WARNING -   2025-04-16 07:23:28,293 - INFO - Financial services coverage metrics calculation complete!
+2025-04-16 07:23:28,319 - INFO - Completed: Financial services coverage metrics calculation
+2025-04-16 07:23:28,319 - INFO - Starting: Economic vitality metrics calculation
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,596 - INFO - Starting economic vitality metrics calculation...
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,597 - INFO - Loading MSA-level data...
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,597 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,599 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,600 - INFO - Loaded MSA data: combined, gdp
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,600 - INFO - Checking for previously calculated metrics...
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,600 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,601 - INFO - Loading financial services metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,601 - INFO - Loaded previously calculated metrics: hnwi, fs
+2025-04-16 07:23:28,632 - WARNING -   2025-04-16 07:23:28,601 - INFO - Calculating GDP Growth Trend...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,602 - ERROR - Error calculating GDP Growth Trend: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured', 'gdp_total_growth'], dtype='object')] are in the [columns]"
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,603 - INFO - Analyzing wealth-creating industries...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,603 - WARNING - No industry data available for analysis
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,603 - INFO - Estimating executive density...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,603 - INFO - Created executive density proxy based on high-income households
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,603 - INFO - Creating Economic Vitality Index...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,604 - INFO - Created Economic Vitality Index using 1 metrics
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,604 - INFO - Creating economic vitality rankings...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,604 - INFO - Created economic vitality rankings using 1 metrics
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,604 - INFO - Combining all metrics...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,605 - INFO - Added HNWI metrics: hnwi_density_rank
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,605 - INFO - Added financial services metrics: opportunity_score, opportunity_level, coverage_opportunity_rank
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,606 - INFO - Saving results...
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,606 - INFO - Saved economic vitality metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics_20250416.csv
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,606 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_rankings_20250416.csv
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,607 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics_documentation.md
+2025-04-16 07:23:28,633 - WARNING -   2025-04-16 07:23:28,607 - INFO - Economic vitality metrics calculation complete!
+2025-04-16 07:23:28,633 - INFO - Completed: Economic vitality metrics calculation
+2025-04-16 07:23:28,633 - INFO - Creating Phase 1 summary report...
+2025-04-16 07:23:28,634 - INFO - Created Phase 1 summary report at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 07:23:28,634 - INFO - Phase 1 summary report available at: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 07:23:28,634 - INFO - Phase 1 of Wealth Management Market Opportunity Analysis complete!
+2025-04-16 08:14:44,759 - INFO - Starting Phase 1 of Wealth Management Market Opportunity Analysis
+2025-04-16 08:14:44,762 - INFO - Refreshing data from original sources...
+2025-04-16 08:14:44,762 - INFO - Starting: BEA Regional Economic Accounts data collection
+2025-04-16 08:14:46,283 - WARNING -   Traceback (most recent call last):
+2025-04-16 08:14:46,283 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bea.py", line 3, in <module>
+2025-04-16 08:14:46,284 - WARNING -       import pandas as pd
+2025-04-16 08:14:46,284 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 16, in <module>
+2025-04-16 08:14:46,284 - WARNING -       raise ImportError(
+2025-04-16 08:14:46,284 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 08:14:46,284 - WARNING -   numpy: cannot import name randbits
+2025-04-16 08:14:46,284 - ERROR - Failed: BEA Regional Economic Accounts data collection (Return code: 1)
+2025-04-16 08:14:46,284 - INFO - Starting: Census ACS data collection
+2025-04-16 08:14:46,420 - WARNING -   Traceback (most recent call last):
+2025-04-16 08:14:46,420 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_census_acs.py", line 3, in <module>
+2025-04-16 08:14:46,420 - WARNING -       import pandas as pd
+2025-04-16 08:14:46,420 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 16, in <module>
+2025-04-16 08:14:46,420 - WARNING -       raise ImportError(
+2025-04-16 08:14:46,420 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 08:14:46,420 - WARNING -   numpy: cannot import name randbits
+2025-04-16 08:14:46,420 - ERROR - Failed: Census ACS data collection (Return code: 1)
+2025-04-16 08:14:46,420 - INFO - Starting: IRS SOI data collection
+2025-04-16 08:14:46,535 - WARNING -   Traceback (most recent call last):
+2025-04-16 08:14:46,536 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_irs_soi.py", line 15, in <module>
+2025-04-16 08:14:46,536 - WARNING -       import pandas as pd
+2025-04-16 08:14:46,536 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 16, in <module>
+2025-04-16 08:14:46,536 - WARNING -       raise ImportError(
+2025-04-16 08:14:46,536 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 08:14:46,536 - WARNING -   numpy: cannot import name randbits
+2025-04-16 08:14:46,536 - ERROR - Failed: IRS SOI data collection (Return code: 1)
+2025-04-16 08:14:46,536 - INFO - Starting: FDIC deposit data collection
+2025-04-16 08:14:46,657 - WARNING -   Traceback (most recent call last):
+2025-04-16 08:14:46,657 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_fdic_deposits.py", line 20, in <module>
+2025-04-16 08:14:46,657 - WARNING -       import pandas as pd
+2025-04-16 08:14:46,657 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 16, in <module>
+2025-04-16 08:14:46,657 - WARNING -       raise ImportError(
+2025-04-16 08:14:46,657 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 08:14:46,657 - WARNING -   numpy: cannot import name randbits
+2025-04-16 08:14:46,657 - ERROR - Failed: FDIC deposit data collection (Return code: 1)
+2025-04-16 08:14:46,657 - INFO - Starting: BLS advisors data collection
+2025-04-16 08:14:46,726 - WARNING -   Traceback (most recent call last):
+2025-04-16 08:14:46,726 - WARNING -     File "/Users/sandeepmangaraj/myworkspace/Utilities/wmmo/data_bls_advisors.py", line 4, in <module>
+2025-04-16 08:14:46,726 - WARNING -       import pandas as pd
+2025-04-16 08:14:46,726 - WARNING -     File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 16, in <module>
+2025-04-16 08:14:46,726 - WARNING -       raise ImportError(
+2025-04-16 08:14:46,726 - WARNING -   ImportError: Unable to import required dependencies:
+2025-04-16 08:14:46,726 - WARNING -   numpy: cannot import name randbits
+2025-04-16 08:14:46,726 - ERROR - Failed: BLS advisors data collection (Return code: 1)
+2025-04-16 08:14:46,726 - WARNING - Data refresh had issues, but continuing with existing data
+2025-04-16 08:14:46,726 - INFO - Starting: County-to-MSA crosswalk creation
+2025-04-16 08:14:52,234 - WARNING -   2025-04-16 08:14:52,030 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 08:14:52,234 - WARNING -   2025-04-16 08:14:52,182 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 08:14:52,234 - WARNING -   2025-04-16 08:14:52,182 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 08:14:52,234 - INFO - Completed: County-to-MSA crosswalk creation
+2025-04-16 08:14:52,234 - INFO - Found 1 files matching cbsa_crosswalk_data_*.pkl in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks
+2025-04-16 08:14:52,234 - INFO - Starting: County-to-MSA data aggregation
+2025-04-16 08:14:59,440 - WARNING -   2025-04-16 08:14:52,488 - INFO - Starting county-to-MSA aggregation process...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,489 - INFO - Loading CBSA crosswalk data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,489 - INFO - Using crosswalk file: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,491 - INFO - Loaded crosswalk data with 393 CBSAs and 5 counties
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,491 - INFO - Loading BEA data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,491 - INFO - Loading GDP data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_gdp_2023_2024_A.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,506 - INFO - Loading Personal Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_personal_income_2023_2024_A.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,510 - INFO - Loading Population data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_population_2023_2024_A.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,515 - INFO - Loading Per Capita Income data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bea_data/county_per_capita_income_2023_2024_A.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,519 - INFO - Loaded BEA data: gdp, personal_income, population, per_capita_income
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,519 - INFO - Loading Census ACS data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,519 - INFO - Loading Census ACS data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../census_acs_data/census_acs_county_data_2023_20250407_083613.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,528 - INFO - Loaded Census ACS data with 3222 counties
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,529 - INFO - Loaded Census ACS data dictionary with 32 variables
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,529 - INFO - Loading IRS SOI data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:52,529 - INFO - Loading combined IRS SOI data from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../irs_soi_data/irs_soi_zipcode_all_years.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:55,800 - INFO - Loaded IRS SOI data dictionary with 39 fields
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:55,801 - INFO - Loaded IRS SOI data for 1 datasets
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:55,801 - INFO - Loading FDIC deposit data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:55,801 - INFO - Loading FDIC deposit data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2020.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:56,529 - INFO - Loading FDIC deposit data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2021.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:57,218 - INFO - Loading FDIC deposit data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2022.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:57,886 - INFO - Loading FDIC deposit data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2023.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:58,537 - INFO - Loading FDIC deposit data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../fdic_deposit_data/sod_data_2024.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,198 - INFO - Loaded FDIC data dictionary with 38 fields
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,198 - INFO - Loaded FDIC deposit data for 0 years
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,208 - INFO - Loading BLS advisor data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,208 - INFO - Loading BLS advisor data for 2020 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,211 - INFO - Loading BLS advisor data for 2021 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,213 - INFO - Loading BLS advisor data for 2022 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,216 - INFO - Loading BLS advisor data for 2023 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,218 - INFO - Loading BLS advisor data for 2024 from: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,220 - INFO - Loaded BLS advisor data dictionary
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,220 - INFO - Loaded BLS advisor data for 5 years
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,220 - INFO - Aggregating BEA data to MSA level...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,220 - INFO - Aggregating GDP data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,224 - INFO - Aggregating Population data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,226 - INFO - Aggregating Personal Income data...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,228 - INFO - BEA data aggregation complete. Created 5 MSA-level datasets.
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,228 - INFO - Aggregating Census ACS data to MSA level...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,235 - INFO - Census ACS data aggregation complete with 5 MSAs
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,235 - INFO - Aggregating IRS SOI data to MSA level...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,353 - WARNING - ZIP code to MSA mapping is approximated and needs improvement in production
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,372 - INFO - Created placeholder IRS data at MSA level (requires ZIP-to-county mapping)
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,384 - INFO - Aggregating FDIC deposit data to MSA level...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,385 - WARNING - No FDIC deposit data available for aggregation.
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,385 - INFO - Combining MSA-level data from all sources...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,385 - INFO - Created MSA reference table with 5 MSAs
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,388 - INFO - Created combined metrics table with 5 MSAs and 8 columns
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,388 - INFO - Saving output files...
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,389 - INFO - Saved combined metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,390 - INFO - Saved MSA reference to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,390 - INFO - Saved BEA gdp data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_20250416.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,390 - INFO - Saved BEA gdp_growth data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,390 - INFO - Saved BEA population data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_population_20250416.csv
+2025-04-16 08:14:59,441 - WARNING -   2025-04-16 08:14:59,391 - INFO - Saved BEA personal_income data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_personal_income_20250416.csv
+2025-04-16 08:14:59,442 - WARNING -   2025-04-16 08:14:59,391 - INFO - Saved BEA per_capita_income_calculated data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_per_capita_income_calculated_20250416.csv
+2025-04-16 08:14:59,442 - WARNING -   2025-04-16 08:14:59,391 - INFO - Saved Census acs data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 08:14:59,442 - WARNING -   2025-04-16 08:14:59,391 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/README.md
+2025-04-16 08:14:59,442 - WARNING -   2025-04-16 08:14:59,391 - INFO - All output files saved successfully
+2025-04-16 08:14:59,442 - WARNING -   2025-04-16 08:14:59,391 - INFO - County-to-MSA aggregation process complete!
+2025-04-16 08:14:59,442 - INFO - Completed: County-to-MSA data aggregation
+2025-04-16 08:14:59,442 - INFO - Found 1 files matching msa_combined_metrics_*.csv in /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata
+2025-04-16 08:14:59,442 - INFO - Starting: HNWI density metrics calculation
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,705 - INFO - Starting HNWI density metrics calculation...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,705 - INFO - Loading MSA-level data...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,706 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,713 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,714 - INFO - Loading Census ACS data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_census_acs_20250416.csv
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,715 - INFO - Loaded MSA data: combined, gdp, acs
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,716 - INFO - Calculating HNWI Density Index...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,717 - INFO - Calculated HNWI Density Index using 3 indicators
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,717 - INFO - Calculating Wealth Growth Rate...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,718 - ERROR - Error calculating Wealth Growth Rate: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured'], dtype='object')] are in the [columns]"
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - INFO - Calculating Luxury Real Estate Quotient...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - INFO - Using pre-calculated Luxury Real Estate Quotient
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - INFO - Calculating Income Elite Ratio...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - INFO - Using pre-calculated Income Elite Ratio
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - INFO - Calculating Banking Deposit Intensity...
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - WARNING - No suitable data available to calculate Banking Deposit Intensity
+2025-04-16 08:14:59,750 - WARNING -   2025-04-16 08:14:59,719 - INFO - Creating HNWI density rankings...
+2025-04-16 08:14:59,751 - WARNING -   2025-04-16 08:14:59,720 - INFO - Created HNWI density rankings using 2 metrics
+2025-04-16 08:14:59,751 - WARNING -   2025-04-16 08:14:59,720 - INFO - Saving results...
+2025-04-16 08:14:59,751 - WARNING -   2025-04-16 08:14:59,720 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 08:14:59,751 - WARNING -   2025-04-16 08:14:59,722 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_rankings_20250416.csv
+2025-04-16 08:14:59,751 - WARNING -   2025-04-16 08:14:59,722 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_documentation.md
+2025-04-16 08:14:59,751 - WARNING -   2025-04-16 08:14:59,722 - INFO - HNWI density metrics calculation complete!
+2025-04-16 08:14:59,751 - INFO - Completed: HNWI density metrics calculation
+2025-04-16 08:14:59,751 - INFO - Starting: Financial services coverage metrics calculation
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,056 - INFO - Starting financial services coverage metrics calculation...
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,056 - INFO - Loading MSA-level data...
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,056 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,064 - INFO - Loading BLS 2024 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2024.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,066 - INFO - Loading BLS 2023 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2023.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,067 - INFO - Loading BLS 2022 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2022.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,069 - INFO - Loading BLS 2021 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2021.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,070 - INFO - Loading BLS 2020 data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/../bls_advisors_data/2020.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - INFO - Loading MSA reference data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_reference_20250416.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - INFO - Loaded MSA data: combined, bls_2024, bls_2023, bls_2022, bls_2021, bls_2020, reference
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - INFO - Checking for HNWI density metrics...
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - INFO - Using HNWI metrics as base for calculations
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - INFO - Calculating Advisor Penetration Rate...
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - WARNING - BLS data doesn't have CBSA code column
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,072 - WARNING - Unable to calculate Advisor Penetration Rate
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,073 - INFO - Calculating HNWI-to-Advisor Ratio...
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,073 - WARNING - Missing required columns for HNWI-to-Advisor Ratio: ['total_households', 'total_advisors']
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,073 - INFO - Estimating market opportunity...
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,074 - INFO - Calculated opportunity scores using 1 metrics
+2025-04-16 08:15:00,100 - WARNING -   2025-04-16 08:15:00,074 - INFO - Creating financial services coverage rankings...
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,074 - INFO - Created coverage rankings using 1 metrics
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,074 - INFO - Saving results...
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,075 - INFO - Saved complete metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,076 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/coverage_opportunity_rankings_20250416.csv
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,077 - INFO - Saved top market opportunities to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/top_market_opportunities_20250416.csv
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,077 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_documentation.md
+2025-04-16 08:15:00,101 - WARNING -   2025-04-16 08:15:00,077 - INFO - Financial services coverage metrics calculation complete!
+2025-04-16 08:15:00,101 - INFO - Completed: Financial services coverage metrics calculation
+2025-04-16 08:15:00,101 - INFO - Starting: Economic vitality metrics calculation
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,392 - INFO - Starting economic vitality metrics calculation...
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,392 - INFO - Loading MSA-level data...
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,392 - INFO - Loading combined metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_combined_metrics_20250416.csv
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,400 - INFO - Loading BEA GDP data from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/msadata/msa_bea_gdp_growth_20250416.csv
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,401 - INFO - Loaded MSA data: combined, gdp
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,401 - INFO - Checking for previously calculated metrics...
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,401 - INFO - Loading HNWI metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/hnwi_density_metrics_20250416.csv
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,401 - INFO - Loading financial services metrics from /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/financial_services_metrics_20250416.csv
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,402 - INFO - Loaded previously calculated metrics: hnwi, fs
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,402 - INFO - Calculating GDP Growth Trend...
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,403 - ERROR - Error calculating GDP Growth Trend: "None of [Index(['cbsa_code', 'gdp_cagr', 'years_measured', 'gdp_total_growth'], dtype='object')] are in the [columns]"
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,403 - INFO - Analyzing wealth-creating industries...
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,403 - WARNING - No industry data available for analysis
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,403 - INFO - Estimating executive density...
+2025-04-16 08:15:00,430 - WARNING -   2025-04-16 08:15:00,404 - INFO - Created executive density proxy based on high-income households
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,404 - INFO - Creating Economic Vitality Index...
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,404 - INFO - Created Economic Vitality Index using 1 metrics
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,404 - INFO - Creating economic vitality rankings...
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,405 - INFO - Created economic vitality rankings using 1 metrics
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,405 - INFO - Combining all metrics...
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,406 - INFO - Added HNWI metrics: hnwi_density_rank
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,406 - INFO - Added financial services metrics: opportunity_score, opportunity_level, coverage_opportunity_rank
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,406 - INFO - Saving results...
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,407 - INFO - Saved economic vitality metrics to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics_20250416.csv
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,407 - INFO - Saved rankings to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_rankings_20250416.csv
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,407 - INFO - Created documentation file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/metrics/economic_vitality_metrics_documentation.md
+2025-04-16 08:15:00,431 - WARNING -   2025-04-16 08:15:00,407 - INFO - Economic vitality metrics calculation complete!
+2025-04-16 08:15:00,431 - INFO - Completed: Economic vitality metrics calculation
+2025-04-16 08:15:00,431 - INFO - Creating Phase 1 summary report...
+2025-04-16 08:15:00,431 - INFO - Created Phase 1 summary report at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 08:15:00,432 - INFO - Phase 1 summary report available at: /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/phase1_summary_20250416.md
+2025-04-16 08:15:00,432 - INFO - Phase 1 of Wealth Management Market Opportunity Analysis complete!

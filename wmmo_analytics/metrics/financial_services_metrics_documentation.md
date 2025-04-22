@@ -21,11 +21,11 @@ This file contains Financial Services Coverage metrics for Metropolitan Statisti
 
 The MSAs are ranked based on a composite of the coverage metrics. Lower ranks indicate greater opportunity (underserved markets with high wealth concentration).
 
-## Files Generated on 20250414
+## Files Generated on 20250416
 
-- `financial_services_metrics_20250414.csv`: Complete metrics for all MSAs
-- `coverage_opportunity_rankings_20250414.csv`: Simplified rankings with key metrics
-- `top_market_opportunities_20250414.csv`: Detailed profile of top market opportunities
+- `financial_services_metrics_20250416.csv`: Complete metrics for all MSAs
+- `coverage_opportunity_rankings_20250416.csv`: Simplified rankings with key metrics
+- `top_market_opportunities_20250416.csv`: Detailed profile of top market opportunities
 
 ## Notes
 

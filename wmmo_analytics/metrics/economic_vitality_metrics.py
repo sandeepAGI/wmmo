@@ -252,7 +252,7 @@ def analyze_wealth_creating_industries(msa_data):
                 '0900': 'Professional, scientific, and technical services',  # Professional services
                 '1102': 'Management of companies and enterprises',  # Corporate management
                 '2001': 'Wages and salaries',  # Overall wages
-                '2012': 'Proprietors' income',  # Business owners
+                '2012': 'Proprietors\' income',  # Business owners
             }
             
             # Filter for wealth-creating industries

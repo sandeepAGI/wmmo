@@ -24,10 +24,10 @@ This file contains High-Net-Worth Individual (HNWI) density metrics for Metropol
 
 The MSAs are ranked based on a composite of the above metrics. The composite ranking is the average of the individual metric rankings, with lower numbers indicating better ranks.
 
-## Files Generated on 20250414
+## Files Generated on 20250416
 
-- `hnwi_density_metrics_20250414.csv`: Complete metrics for all MSAs
-- `hnwi_density_rankings_20250414.csv`: Simplified rankings with key metrics
+- `hnwi_density_metrics_20250416.csv`: Complete metrics for all MSAs
+- `hnwi_density_rankings_20250416.csv`: Simplified rankings with key metrics
 
 ## Notes
 

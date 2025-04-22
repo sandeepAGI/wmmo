@@ -26,3 +26,15 @@
 2025-04-14 10:02:17,005 - INFO - Saved combined crosswalk data to /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/cbsa_crosswalk_data_20250414.pkl
 2025-04-14 10:02:17,005 - INFO - Created README file at /Users/sandeepmangaraj/myworkspace/Utilities/wmmo/wmmo_analytics/crosswalks/README.md
 2025-04-14 10:02:17,005 - INFO - CBSA crosswalk processing complete!
+2025-04-16 07:10:44,125 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 07:10:44,238 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 07:10:44,238 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 07:15:59,208 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 07:15:59,312 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 07:15:59,312 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 07:23:20,115 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 07:23:20,259 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 07:23:20,259 - ERROR - Failed to download CBSA data. Exiting.
+2025-04-16 08:14:52,030 - INFO - Downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip...
+2025-04-16 08:14:52,182 - ERROR - Error downloading https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip: 403 Client Error: Forbidden for url: https://www2.census.gov/geo/tiger/TIGER2023/CBSA/tl_2023_us_cbsa.zip
+2025-04-16 08:14:52,182 - ERROR - Failed to download CBSA data. Exiting.
